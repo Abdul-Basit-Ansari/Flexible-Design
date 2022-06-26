@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Flexible Web</title>
+</head>
+
+<body>
+	<script>
+		function unhidden() {
+			id = document.getElementById('mymenu')
+			if (id.style.display === "flex") {
+				id.style.display = "none"
+
+			}
+			else {
+
+				id.style.display = "flex"
+			}
+		}
+	</script>
+	<nav
+		class="flex items-center justify-between flex-wrap text-teal-100 bg-teal-600 border-b-2 border-slate-700 py-6 px-3">
+		<div class="flex items-center flex-shrink-0 text-white mr-3">
+
+			<a href="/" class="font-semibold text-xl tracking-tight text-teal-100 hover:text-teal-300 ml-4">Flexible Web</a>
+		</div>
+		<div class="block lg:hidden">
+			<button style="background-color:rgb(204 251 241/var(--tw-text-opacity));" onclick="unhidden()"
+				class="flex items-center px-3 py-2 border rounded text-teal-100 border-teal-400 hover:text-white hover:border-white">
+				<svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+					<title>Menu</title>
+					<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+				</svg>
+			</button>
+		</div>
+
+
+		<div id="mymenu" class="w-full lg:flex-grow lg:flex lg:items-center lg:w-auto hidden">
+			<div class="text-sm lg:flex-grow">
+			</div>
+			<div>
+				<a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-teal-100 hover:text-teal-300 mr-4 ml-4">
+					Home
+				</a>
+				<a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-teal-100 hover:text-teal-300 mr-4 ml-4">
+					About
+				</a>
+				<a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-teal-100 hover:text-teal-300  ml-4">
+					Services
+
+				</a>
+
+				<a href="#"
+					class="inline-block text-sm px-4 py-2 leading-none border rounded hover:text-teal-500 border-teal-200 hover:border-teal-500 text-teal-200 hover:bg-teal-200 mt-4 lg:mt-0 ml-2">Contacts</a>
+			</div>
+		</div>
+	</nav>
+
+	
+	<div class="mybox">
+
+		<div class="left">
+			<div class="alpha1">
+
+				<div class="lefta">A</div>
+				<div class="leftb">B</div>
+				<div class="leftc">C</div>
+				<div class="leftd">D</div>
+				<div class="lefte">E</div>
+			</div>
+		</div>
+
+		<div class="right">
+
+			<div class="alpha">
+				<span class="letter">A</span>
+				<span class="letter">B</span>
+				<span class="letter">C</span>
+				<span class="letter">D</span>
+				<span class="letter">E</span>
+				<span class="letter">F</span>
+				<span class="letter">G</span>
+				<span class="letter">H</span>
+				<span class="letter">I</span>
+
+			</div>
+			<div class="alpha2">
+				<span class="lettera">A</span>
+				<span class="letterb">B</span>
+				<span class="lettere">E</span>
+				<span class="letterc">C</span>
+				<span class="letterd">D</span>
+
+			</div>
+		</div>
+
+	</div>
+
+</body>
+
+</html>
